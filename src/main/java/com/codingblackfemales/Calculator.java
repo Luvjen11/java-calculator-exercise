@@ -14,6 +14,9 @@ public class Calculator {
     }
 
     public static Integer divide(final int firstInput, final int secondInput) {
+        if (secondInput == 0) {
+            throw new ArithmeticException("Cannot divide by zero");
+        }
         return firstInput / secondInput;
     }
 }
